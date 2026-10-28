@@ -1,0 +1,27 @@
+:root{--bg:#F6F6F4;--surface:#FFF;--fg:#0B0C0E;--muted:#6B7078;--line:#E5E6E8;--accent:#00A88A;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#050607;--surface:#0C0E11;--fg:#F2F4F6;--muted:#7D838C;--line:#1C1F24;--accent:#3BF5C8;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans","Apple SD Gothic Neo","Helvetica Neue",sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:42rem;margin:0 auto;padding:3.5rem max(16px,env(safe-area-inset-right)) 4rem max(16px,env(safe-area-inset-left));display:flex;flex-direction:column;gap:2.25rem}
+a{color:var(--accent)}
+.brand{display:flex;align-items:center;gap:.6rem;font:500 .8rem/1 ui-monospace,"SF Mono",Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.brand svg{width:22px;height:22px}
+h1{font-size:clamp(1.8rem,6vw,2.4rem);font-weight:500;line-height:1.2;margin:.75rem 0 0;letter-spacing:-.01em}
+h1 span{display:block;font-size:.5em;color:var(--muted);margin-top:.4rem}
+.meta{margin:.5rem 0 0;color:var(--muted);font:.8rem/1.6 ui-monospace,"SF Mono",Menlo,monospace}
+.summary{border-left:2px solid var(--accent);padding:.2rem 0 .2rem 1rem;display:flex;flex-direction:column;gap:.5rem}
+.summary p,section p{margin:0}
+section{display:flex;flex-direction:column;gap:.6rem;border-top:.5px solid var(--line);padding-top:1.5rem}
+h2{font-size:1.05rem;font-weight:500;margin:0}
+h2 small{font:400 .72rem/1 ui-monospace,"SF Mono",Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-left:.5rem}
+.en{color:var(--muted);font-size:.93rem;line-height:1.65}
+ul{margin:0;padding-left:1.1rem;display:flex;flex-direction:column;gap:.35rem}
+code{font:.85em ui-monospace,"SF Mono",Menlo,monospace;background:var(--surface);border:.5px solid var(--line);border-radius:4px;padding:.05em .35em}
+.btn{display:inline-block;font-size:.95rem;color:var(--bg);background:var(--fg);border-radius:999px;padding:.55rem 1.2rem;text-decoration:none}
+.email{font-family:ui-monospace,"SF Mono",Menlo,monospace;word-break:break-all}
+nav{display:flex;gap:1.25rem;font-size:.9rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--fg)}
+footer{color:var(--muted);font-size:.85rem;border-top:.5px solid var(--line);padding-top:1.25rem;display:flex;flex-direction:column;gap:.75rem}
+.tag{font-size:clamp(2.2rem,9vw,3.4rem);font-weight:500;line-height:1.1;letter-spacing:-.02em;margin:1.5rem 0 0}
+.tag span{color:var(--accent)}
